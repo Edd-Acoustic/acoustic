@@ -3,6 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## App Setup
 
 `yarn`
+
+`npx husky add .husky/pre-commit "npx lint-staged"`
+
 ## Run App
 
 `yarn start`
