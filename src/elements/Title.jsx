@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
+import PropTypes from 'prop-types';
 
 import device from '../utils/Devices';
 
@@ -21,5 +22,13 @@ function Title({ text }) {
     </StyledMarkdownHeading>
   );
 }
+
+Title.defaultProps = {
+  text: '',
+};
+
+Title.propTypes = {
+  text: PropTypes.string,
+};
 
 export default Title;
